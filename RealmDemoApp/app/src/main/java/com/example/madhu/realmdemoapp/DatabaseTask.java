@@ -10,7 +10,7 @@ import io.realm.RealmResults;
  * Created by MADHU on 18-12-2016.
  */
 
-public class DatabaseTask
+public class DatabaseTask 
 {
     private static Realm r1 = Realm.getDefaultInstance();
     private static User u1 = null;
@@ -55,6 +55,25 @@ public class DatabaseTask
             r1.commitTransaction();
             return true;
         }
+        else
+        {
+            return false;
+        }
+    }
+
+    public static boolean deleteUser(String email)
+    {
+        RealmResults<User> res1 = r1.where(User.class).
+                equalTo("email",email).
+                findAll();
+        if(res1!=null)
+        {
+            r1.beginTransaction();
+            res1.deleteFirstFromRealm();
+            r1.commitTransaction();
+            return true;
+        }
+
         else
         {
             return false;

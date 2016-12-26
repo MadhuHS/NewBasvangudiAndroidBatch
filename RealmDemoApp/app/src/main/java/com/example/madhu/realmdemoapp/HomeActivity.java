@@ -37,7 +37,9 @@ public class HomeActivity extends AppCompatActivity {
                 break;
 
             case R.id.option2 :
-                Toast.makeText(HomeActivity.this,"Help",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(HomeActivity.this,"Help",Toast.LENGTH_SHORT).show();
+                Intent i2 = new Intent(HomeActivity.this,DeleteUserActivity.class);
+                startActivity(i2);
                 break;
         }
         return super.onOptionsItemSelected(item);
