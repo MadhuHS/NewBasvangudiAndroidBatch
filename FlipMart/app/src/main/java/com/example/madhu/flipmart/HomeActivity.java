@@ -29,6 +29,7 @@ public class HomeActivity extends AppCompatActivity
 
     ViewPager viewPager;
     ImageFragmentPagerAdapter adapter;
+    int countbackpress=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,13 +61,9 @@ public class HomeActivity extends AppCompatActivity
     }
 
     @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+    public void onBackPressed()
+    {
+        finishAffinity();
     }
 
     @Override

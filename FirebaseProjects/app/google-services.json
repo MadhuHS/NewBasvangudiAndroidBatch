@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "49769914128",
+    "firebase_url": "https://viralshare-285c3.firebaseio.com",
+    "project_id": "viralshare-285c3",
+    "storage_bucket": "viralshare-285c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49769914128:android:73df362768a57b01",
+        "android_client_info": {
+          "package_name": "com.aquamax.viralshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49769914128-gobder6h9irvgg8dhq2171nu0n3n1fnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamax.viralshare",
+            "certificate_hash": "1b9316a0e96fce6dff348d109aeb7d4094ee82db"
+          }
+        },
+        {
+          "client_id": "49769914128-r110i5p78t97pimmgtd2q3e3qo5hnf1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW01JQ0a9n-W38n8_K6fdEuJO9Ei1fDvo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49769914128-r110i5p78t97pimmgtd2q3e3qo5hnf1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
